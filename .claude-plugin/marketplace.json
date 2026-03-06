@@ -10,7 +10,7 @@
       "name": "sorbit-courses",
       "source": "./sorbit-courses",
       "description": "Search and upload courses to Sorbit's AI tutoring platform",
-      "version": "1.1.0",
+      "version": "1.2.1",
       "author": {
         "name": "Sorbit Ltd"
       },

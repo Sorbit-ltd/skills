@@ -1,6 +1,6 @@
 ---
 name: sorbit-courses
-version: 1.1.0
+version: 1.2.1
 summary: Search, create, and upload structured courses to Sorbit — an AI tutoring platform where every lesson is a 1-on-1 conversation
 tags:
   - education
