@@ -1,15 +1,20 @@
 {
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
   "name": "sorbit",
-  "owner": "Sorbit-ltd",
+  "owner": {
+    "name": "Sorbit Ltd",
+    "email": "hello@sorbit.co.uk"
+  },
   "plugins": [
     {
       "name": "sorbit-courses",
+      "source": "./sorbit-courses",
       "description": "Search and upload courses to Sorbit's AI tutoring platform",
-      "source": {
-        "type": "github",
-        "repo": "Sorbit-ltd/skills",
-        "path": "sorbit-courses"
-      }
+      "version": "1.0.0",
+      "author": {
+        "name": "Sorbit Ltd"
+      },
+      "category": "education"
     }
   ]
 }
