@@ -1,10 +1,15 @@
 {
   "name": "sorbit",
+  "owner": "Sorbit-ltd",
   "plugins": [
     {
       "name": "sorbit-courses",
-      "path": "sorbit-courses",
-      "description": "Search and upload courses to Sorbit's AI tutoring platform"
+      "description": "Search and upload courses to Sorbit's AI tutoring platform",
+      "source": {
+        "type": "github",
+        "repo": "Sorbit-ltd/skills",
+        "path": "sorbit-courses"
+      }
     }
   ]
 }
