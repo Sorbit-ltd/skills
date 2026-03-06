@@ -1,0 +1,39 @@
+name: Receive SKILL.md sync
+
+on:
+  repository_dispatch:
+    types: [sync-skill]
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Write SKILL.md from payload
+        run: |
+          echo "${{ github.event.client_payload.skill_md_b64 }}" | base64 -d > sorbit-courses/skills/sorbit-courses/SKILL.md
+
+      - name: Update plugin versions
+        run: |
+          VERSION="${{ github.event.client_payload.version }}"
+
+          jq --arg v "$VERSION" '.version = $v' \
+            sorbit-courses/.claude-plugin/plugin.json > tmp.json \
+            && mv tmp.json sorbit-courses/.claude-plugin/plugin.json
+
+          jq --arg v "$VERSION" '.plugins[0].version = $v' \
+            .claude-plugin/marketplace.json > tmp.json \
+            && mv tmp.json .claude-plugin/marketplace.json
+
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Sync SKILL.md v${{ github.event.client_payload.version }} from Sorbit (${{ github.event.client_payload.source_sha }})"
+            git push
+          fi
