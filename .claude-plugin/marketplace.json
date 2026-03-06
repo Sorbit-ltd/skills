@@ -1,0 +1,10 @@
+{
+  "name": "sorbit",
+  "plugins": [
+    {
+      "name": "sorbit-courses",
+      "path": "sorbit-courses",
+      "description": "Search and upload courses to Sorbit's AI tutoring platform"
+    }
+  ]
+}
