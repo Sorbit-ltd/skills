@@ -2,5 +2,10 @@
   "id": "sorbit-courses",
   "name": "Sorbit Courses",
   "description": "Search and upload courses to Sorbit's AI tutoring platform",
-  "version": "1.0.0"
+  "version": "1.0.0",
+  "configSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {}
+  }
 }
