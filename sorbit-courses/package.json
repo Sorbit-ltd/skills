@@ -4,5 +4,8 @@
   "description": "Search and upload courses to Sorbit's AI tutoring platform",
   "keywords": ["sorbit", "education", "courses", "ai-tutoring"],
   "homepage": "https://sorbit.co.uk",
-  "license": "MIT"
+  "license": "MIT",
+  "openclaw": {
+    "extensions": ["./index.js"]
+  }
 }
