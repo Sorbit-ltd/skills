@@ -1,1 +1,5 @@
-// Sorbit Courses skill plugin — no runtime extensions, skills only
+// Sorbit Courses — skill-only plugin, no runtime extensions
+module.exports = {
+  register() {},
+  activate() {}
+};
