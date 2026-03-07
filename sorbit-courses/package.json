@@ -1,0 +1,8 @@
+{
+  "name": "@sorbit-ltd/sorbit-courses",
+  "version": "1.0.0",
+  "description": "Search and upload courses to Sorbit's AI tutoring platform",
+  "keywords": ["sorbit", "education", "courses", "ai-tutoring"],
+  "homepage": "https://sorbit.co.uk",
+  "license": "MIT"
+}
