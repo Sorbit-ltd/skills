@@ -6,6 +6,7 @@ Agent Skills for the Sorbit platform — search courses and upload structured co
 
 Run the following in Claude Code:
 ```
+/plugin marketplace add Sorbit-ltd/skills
 /plugin install sorbit-courses@Sorbit-ltd/skills
 ```
 
