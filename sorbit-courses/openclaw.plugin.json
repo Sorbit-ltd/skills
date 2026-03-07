@@ -1,1 +1,6 @@
-
+{
+  "id": "sorbit-courses",
+  "name": "Sorbit Courses",
+  "description": "Search and upload courses to Sorbit's AI tutoring platform",
+  "version": "1.0.0"
+}
